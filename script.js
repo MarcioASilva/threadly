@@ -1,13 +1,14 @@
-var main = function {
+var main = function() {
 
   $('form').submit(function(event) {
 
-    var $input  = $(event.target).find('input')
+    var $input = $(event.target).find('input');
     var comment = $input.val();
 
-    if (comment != ""){
+    if (comment != "") {
       var html = $('<li>').text(comment);
-      html.prependTo('#comments')
+      html.prependTo('#comments');
+      input.val("");
     }
 
     return false;
